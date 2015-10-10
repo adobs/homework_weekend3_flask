@@ -1,0 +1,17 @@
+/*Your styles can go here.*/
+/*your CSS goes here*/  
+/*label:nth-child(2){
+    font-weight: bold;
+}*/
+#last-name{
+    font-weight: bold;
+}
+h2{
+    border: 3px solid black;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.input-field{
+    background: yellow;
+}

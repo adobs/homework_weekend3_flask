@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Application Form {% endblock %}
+
+{% block content %}
+
+<h1>Ubermelon Job Application </h1>
+
+    <h2>Hello, user.  Below is a form for you to enter in information about yourself.<br>   
+        Please type in your first and last name in the appropriate fields.  <br>
+        Next, input your job requirement (as a number).  <br>
+        Lastly, from the dropdown menu, select which job you are applying for.</h2>
+
+    <form method="POST" action="/application"> <!-- this is the submission form -->
+        <label for "first-name">First Name: </label><input type="text" class="input-field" name="first-name" id="first-name"><br>
+        <label for "last-name" id="last-name">Last Name: </label><input type="text" class="input-field" name="last-name" id="last-name"><br>
+        <label for "salary">Salary: $</label><input type="text" class="input-field" name="salary" id="salary"><br>
+        <label for "position">Select your position: </label><select name="position" id="position">
+        <option value="software-engineer">Software Engineer
+        <option value="qa-engineer">QA Engineer
+        <option value="product-manager">Product Manager
+        </select><br>
+        <input type="submit" class="input-field">
+    </form> <!-- end of submission form -->
+
+{% endblock %}
